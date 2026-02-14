@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIO - 自己紹介</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 50%;
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      box-shadow: 0 8px 32px rgba(102, 126, 234, 0.4);
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #aaa;
+    }
+
+    .section {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    .section h2 {
+      font-size: 22px;
+      margin-bottom: 24px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #667eea;
+      display: inline-block;
+    }
+
+    .hobby-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .hobby-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .hobby-card:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .hobby-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .hobby-card h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .hobby-card p {
+      font-size: 14px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="avatar">RIO</div>
+    <h1>RIO</h1>
+    <p>Welcome to my profile</p>
+  </header>
+
+  <section class="section">
+    <h2>Hobbies</h2>
+    <div class="hobby-list">
+
+      <div class="hobby-card">
+        <div class="hobby-icon">🎮</div>
+        <h3>ゲーム</h3>
+        <p>ジャンルを問わず色々なゲームを楽しんでいます。</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">📚</div>
+        <h3>読書</h3>
+        <p>本を読むことで新しい知識や視点を得るのが好きです。</p>
+      </div>
+
+      <div class="hobby-card">
+        <div class="hobby-icon">💪</div>
+        <h3>筋トレ</h3>
+        <p>日々のトレーニングで心身ともに鍛えています。</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 RIO
+  </footer>
+
+</body>
+</html>
